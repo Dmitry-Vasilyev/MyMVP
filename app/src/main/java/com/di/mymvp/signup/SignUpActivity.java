@@ -1,4 +1,4 @@
-package com.di.mymvp.signin;
+package com.di.mymvp.signup;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,22 +6,22 @@ import android.os.Bundle;
 import com.di.mymvp.R;
 import com.di.mymvp.util.ActivityUtils;
 
-public class SignInActivity extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity {
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_signin);
+        setContentView(R.layout.act_signUp);
 
-        SignInFragment signInFragment = (SignInFragment) getSupportFragmentManager()
+        SignUpFragment signUpFragment = (SignUpFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.contentFrame);
-        if(signInFragment == null) {
+        if(signUpFragment == null) {
             //Create fragment
-            signInFragment = SignInFragment.newInstance();
+            signUpFragment = SignUpFragment.newInstance();
             ActivityUtils.addFragmentToActivity(
-                    getSupportFragmentManager(), signInFragment, R.id.contentFrame);
+                    getSupportFragmentManager(), signUpFragment, R.id.contentFrame);
         }
         
     }

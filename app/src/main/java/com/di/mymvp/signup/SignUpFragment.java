@@ -1,4 +1,4 @@
-package com.di.mymvp.signin;
+package com.di.mymvp.signup;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,15 +13,15 @@ import com.di.mymvp.R;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-public class SignInFragment extends Fragment implements SignInContract.View {
-    private SignInContract.Presenter presenter;
+public class SignUpFragment extends Fragment implements SignUpContract.View {
+    private SignUpContract.Presenter presenter;
 
-    public SignInFragment() {
+    public SignUpFragment() {
 
     }
 
-    public static SignInFragment newInstance() {
-        return new SignInFragment();
+    public static SignUpFragment newInstance() {
+        return new SignUpFragment();
     }
 
     @Override
@@ -36,14 +36,14 @@ public class SignInFragment extends Fragment implements SignInContract.View {
     }
 
     @Override
-    public void setPresenter(@NonNull SignInContract.Presenter presenter) {
+    public void setPresenter(@NonNull SignUpContract.Presenter presenter) {
         this.presenter = checkNotNull(presenter);
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.frag_signin, container, false);
+        View root = inflater.inflate(R.layout.frag_signUp, container, false);
         ListView listView = (ListView) root.findViewById(R.id.list_users);
 
         return super.onCreateView(inflater, container, savedInstanceState);

@@ -1,9 +1,9 @@
-package com.di.mymvp.signin;
+package com.di.mymvp.signup;
 
 import com.di.mymvp.BasePresenter;
 import com.di.mymvp.BaseView;
 
-public interface SignInContract {
+public interface SignUpContract {
     interface View extends BaseView<Presenter> {
 
     }
