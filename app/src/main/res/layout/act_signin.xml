@@ -6,13 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".signin.SignInActivity"
     android:orientation="horizontal">
-
-
-    <fragment
-        android:id="@+id/test"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout="@layout/frag_signin"/>
     <FrameLayout
         android:id="@+id/contentFrame"
         android:layout_width="match_parent"
