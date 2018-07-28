@@ -43,7 +43,7 @@ public class SignUpFragment extends Fragment implements SignUpContract.View {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.frag_signUp, container, false);
+        View root = inflater.inflate(R.layout.frag_signup, container, false);
         ListView listView = (ListView) root.findViewById(R.id.list_users);
 
         return super.onCreateView(inflater, container, savedInstanceState);

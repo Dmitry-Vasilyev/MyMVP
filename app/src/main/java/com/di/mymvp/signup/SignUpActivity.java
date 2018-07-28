@@ -13,7 +13,7 @@ public class SignUpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_signUp);
+        setContentView(R.layout.act_signup);
 
         SignUpFragment signUpFragment = (SignUpFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.contentFrame);
